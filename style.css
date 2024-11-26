@@ -169,6 +169,7 @@ svg{
   height: 50px;
   border: 1px solid #2F3336;
   cursor: pointer;
+  display: block;
 }
 
 .post-info {
@@ -176,6 +177,8 @@ svg{
   flex-direction: column;
   flex: 1; /* Ensure it adapts to the container */
   word-break: break-word; /* Handle long text gracefully */
+  cursor: pointer;
+  display: block;
 }
 
 .post-info span {
@@ -187,6 +190,10 @@ svg{
 .post-content {
   margin: 10px 0;
   font-size: 16px;
+  word-wrap: break-word; /* Ensure long words break */
+        overflow-wrap: break-word; /* For compatibility with some browsers */
+        width: 100%; /* Ensure it takes up available space */
+        white-space: normal; /* Ensure white space doesn't prevent wrapping */
 }
 
 .mention{
