@@ -119,6 +119,7 @@ svg{
   width: 100%;
   resize: none; /* Prevents manual resizing */
   overflow-y: auto; /* Smooth scrolling for large inputs */
+  cursor: auto;
 }
 
 .tweet-input:focus {
