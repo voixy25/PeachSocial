@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Peach</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -78,12 +80,12 @@
         <main class="feed">
             <!-- Tweet Bar -->
             <header class="tweet-bar">
-                <textarea placeholder="What's peachin'?" class="tweet-input"></textarea>
-                <button class="tweet-button">Preach</button>
+                <textarea id="tweetInput" placeholder="What's peachin'?" class="tweet-input"></textarea>
+                <button id="tweetButton" class="tweet-button">Preach</button>
             </header>
 
             <!-- Scrollable Feed -->
-            <div class="feed-scroll">
+            <div id="feed" class="feed-scroll">
                 <section class="post">
                     <div class="post-header">
                         <img src="https://mir-s3-cdn-cf.behance.net/user/115/4919f3805150007.5fdcb1ede5d59.jpg"
@@ -95,6 +97,27 @@
                     </div>
                     <div class="post-content">
                         <p>This is a post styled to match the modern X.com layout!</p>
+                    </div>
+                    <div class="post-footer">
+                        <button>💬</button>
+                        <button>🔁</button>
+                        <button>❤️</button>
+                        <button>📤</button>
+                    </div>
+                </section>
+
+                <section class="post">
+                    <div class="post-header">
+                        <img src="https://mir-s3-cdn-cf.behance.net/user/115/4919f3805150007.5fdcb1ede5d59.jpg" alt="User" class="avatar" />
+                        <div class="post-info">
+                            <strong>Voixy</strong>
+                            <span>@voixy25 · 1h</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>
+                            Barca - Brest
+                        </p>
                     </div>
                     <div class="post-footer">
                         <button>💬</button>
@@ -161,6 +184,7 @@
             <button class="subscribe-button">Subscribe</button>
         </aside>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
