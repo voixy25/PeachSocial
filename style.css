@@ -430,6 +430,7 @@ svg{
 
 
   .trends {
+    display: none;
     width: 26vw;
     background-color: #16181C;
     padding: 2vw;
@@ -533,4 +534,6 @@ svg{
   .post-info {
     text-align: center; /* Center-align the text under the avatar */
   }
+
+
 }
